@@ -1,1 +1,1 @@
-# python-github
+# python-hangman
