@@ -163,12 +163,9 @@ def checkLetter(guess):
 		ATTEMPT.set("".join(list_of_letters))
 		print(ATTEMPT.get())
 		if "-" not in ATTEMPT.get():
-			print(GUESSED)
 			GUESSED = True
 			messagebox.showinfo("YOU WON", "Congratulations, you didn't let the man hang!")
 			root.destroy()
-
-
 
 # Main Logic
 createInputButtons()
@@ -176,11 +173,6 @@ createLabel(False, heading, 26, 0, 20, 100)
 createLabel(True, INSTRUCTIONS, 18, 1, 0, 100)
 createLabel(True, ATTEMPT, 20, 2, 10, 100)
 hangmanState(GUESSES)
-
-# if GUESSED:
-# 	print("detected guessed true")
-	
-
 
 
 root.mainloop()
